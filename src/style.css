@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: 'Roboto';
+    src: url('src/Bilbo_Swash_Caps,DM_Serif_Display,Roboto_Slab/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+};
+
+@font-face{
+    font-family: 'Bilbo Swash Caps';
+    src: url('src/Bilbo_Swash_Caps,DM_Serif_Display,Roboto_Slab/Bilbo_Swash_Caps/BilboSwashCaps-Regular.ttf');
+};
+
+@font-face{
+    font-family: 'DM Serif Display';
+    src: url('src/Bilbo_Swash_Caps,DM_Serif_Display,Roboto_Slab/DM_Serif_Display/DMSerifDisplay-Regular.ttf');
+};
+
+@layer components {
+    .div-img {
+        @apply w-1/3 ml-8 mt-20  rounded-md;
+    }
+}
+
+@layer components {
+    .div-img img {
+        @apply p-4 border-solid border-areia-500 border-2 rounded-md;
+    }
+}
