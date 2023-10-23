@@ -8,19 +8,19 @@
 </head>
 <body class="bg-areia-200">
     
-     <section class="apresentacao mb-96">
+     <section class="apresentacao mb-80">
          <nav class="bg-areia-100 py-8">
             <ul class="flex justify-center items-center gap-10 text-mostarda-400 text-2xl roboto">
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li class="font-bold"><a href="https://www.instagram.com/macramedabella/" target="_blank">Instagram</a></li>
+                <li><a class="hover:text-azul-700" href="#galeria">Galeria</a></li>
+                <li><a class="hover:text-azul-700" href="#sobre">Sobre</a></li>
+                <li><a class="hover:text-azul-700" href="#contato">Contato</a></li>
+                <li class="font-bold"><a class="hover:text-azul-700" href="https://www.instagram.com/macramedabella/" target="_blank">Instagram</a></li>
             </ul>
          </nav>
          
          <div class="flex">
 
-             <div class="text-right w-1/2 text-9xl text-mostarda-300 mt-48 pr-8 border-r-solid border-r-4 border-r-mostarda-600 roboto-serif ">
+             <div class="text-right w-1/2 text-9xl text-mostarda-300 mt-48 pr-8 border-r-solid border-r-4 border-r-mostarda-600 roboto-serif animatecss animatecss-fadeIn">
                     <h1 class="tracking-wider">Macramê</h1>
                     <h1 class="my-2 text-mostarda-500">da</h1>
                     <h1 class="text-mostarda-700 ">Bella</h1>
@@ -37,54 +37,69 @@
      </section>
     
 
-     <section id="galeria">
-        <h1 class="text-6xl text-mostarda-400 font-titulo text-center mb-20">Galeria</h1>
-        <ul class="flex gap-8 mx-8 lista-imgs">
+     <section id="galeria" class="pt-24">
+        <h2 class="text-8xl text-mostarda-500 roboto-serif my-24 px-8 border-solid border-x-4 border-mostarda-700 text-center w-fit mx-auto ">Galeria</h2>
+        <span class="text-4xl italic text-mostarda-700 roboto text-center block  w-1/2 mx-auto rounded-full">Aqui está um pouquinho do meu trabalho.</span>
+        <ul class="flex gap-24 mx-32 lista-imgs mt-28">
             <li>
-                <img class="rounded-full original" id="bolsa" src="img-categoria/bolsa.jpg" alt="bolsa">
-                <img class="rounded-full hidden bolsa" id="hover" src="img-hover/bolsa-hover.jpg" alt="">
+                <img class="rounded-full original shadow-lg" id="bolsa" src="img-categoria/bolsa.jpg" alt="bolsa">
+                <img class="rounded-full hidden bolsa shadow-lg" id="hover" src="img-hover/bolsa-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full original" id="paineis" src="img-categoria/paineis.jpg" alt="paineis">
-                <img class="rounded-full hidden paineis" id="hover" src="img-hover/paineis-hover.jpg" alt="">
+                <img class="rounded-full original shadow-lg" id="paineis" src="img-categoria/paineis.jpg" alt="paineis">
+                <img class="rounded-full hidden paineis shadow-lg" id="hover" src="img-hover/paineis-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full original" id="utensilios" src="img-categoria/utensilios.jpg" alt="utensilios">
-                <img class="rounded-full hidden utensilios" id="hover" src="img-hover/utensilios-hover.jpg" alt="">
+                <img class="rounded-full original shadow-lg" id="utensilios" src="img-categoria/utensilios.jpg" alt="utensilios">
+                <img class="rounded-full hidden utensilios shadow-lg" id="hover" src="img-hover/utensilios-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full original" id="planta" src="img-categoria/planta.jpg" alt="planta">
-                <img class="rounded-full hidden planta" id="hover" src="img-hover/planta-hover.jpg" alt=""></li>
+                <img class="rounded-full original shadow-lg" id="planta" src="img-categoria/planta.jpg" alt="planta">
+                <img class="rounded-full hidden planta shadow-lg" id="hover" src="img-hover/planta-hover.jpg" alt=""></li>
         </ul>
         
-        <div id="carousel" class="my-40 flex justify-center">
-            <button class="button " id="previous"> Anterior </button>
-            <img class="block rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (1).jpeg" alt="">
-            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (2).jpeg" alt="">
-            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.04 (1).jpeg" alt="">
-            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.05.jpeg" alt="">
-            <button class="button " id="next"> Próxima </button>
+        <div id="carousel" class="my-52 flex mx-32 items-center justify-center">
+            <button class="button" id="previous"> &lt </button>
+            <div class="flex items-center justify-center border-solid border-y-4 py-16 border-mostarda-700">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (1).jpeg" alt="">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (2).jpeg" alt="">
+                <img class="background-img rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.04 (1).jpeg" alt="">
+                <img class=" active rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.05.jpeg" alt="">
+                <img class=" background-img rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.05 (2).jpeg" alt="">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.04.jpeg" alt="">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.07 (2).jpeg" alt="">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.04 (2).jpeg" alt="">
+                <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.07 (1).jpeg" alt="">
+            
+            </div>
+
+            <button class="button " id="next"> &gt </button>
         </div>
         <!-- carrosel -->
      </section>
 
-     <section id="sobre">
-        <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
-        <h1  class="text-6xl text-mostarda-400 font-titulo text-center mt-20" >Sobre</h1>
-        <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
-        <h2 class="text-center my-4 italic text-blue-500 text-xl ">“Amor e cuidado em cada <span class="font-semibold">nó</span>”</h2>
-        <p class="mx-32 max-w-1200 text-center text-lg text-areia-600 pb-8 leading-relaxed" >O Macrame da Bella é uma loja artesanal criativa, onde você encontrará uma ampla variedade de peças de macramê feitas a mão, com design único e estilo autêntico. Eu me especializei em criar peças de macramê para decoração de interiores e exteriores, como pendentes, painéis, espelhos, cortinas, mesa posta, vestuário e acessórios. </p>
+     <section id="sobre" class="flex mx-28 my-32">
+        <div class="w-1/2 border-mostarda-500 border-r-4 pr-16">
+            <h2 class="text-center my-4 italic text-mostarda-700 text-2xl ">“Amor e cuidado em cada <span class="font-semibold">nó</span>”</h2>
+        <p class="text-center text-2xl text-areia-600 leading-relaxed" >O Macrame da Bella é uma loja artesanal criativa, onde você encontrará uma ampla variedade de peças de macramê feitas a mão, com design único e estilo autêntico. Eu me especializei em criar peças de macramê para decoração de interiores e exteriores, como pendentes, painéis, espelhos, cortinas, mesa posta, vestuário e acessórios. </p>
+        </div>
+
+        <div class="w-1/2 pl-16">
+            <h2 class="text-center my-4 italic text-mostarda-700 text-2xl ">“Ser artesã é dar <span class="font-semibold">amor</span> a cada peça única"</h2>
+        <p class=" text-center text-2xl text-areia-600 leading-relaxed" >Sou artesã desde 2020, onde você encontrará uma ampla variedade de peças de macramê feitas a mão, com design único e estilo autêntico. Eu me especializei em criar peças de macramê para decoração de interiores e exteriores, como pendentes, painéis, espelhos, cortinas, mesa posta, vestuário e acessórios. </p>
+        </div>
+        
         
      </section>
-     <img class="w-full" src="capa-sobre.jpg" alt="painel-sobre">
+    
 
-     <footer class="bg-areia-500 py-16">
-        <ul class="flex justify-center gap-10 text-blue-700 font-semibold sm:flex-row">
-            <li>(21) 99999-9999</li>
+     <footer class="bg-areia-500 py-16 roboto text-xl font-semibold ">
+        <ul class="flex justify-center gap-10 text-mostarda-700  ">
+            <li class="hover:text-azul-700">(21) 99999-9999</li>
             <img src="icones/divisor-footer.svg" alt="">
-            <li>bellatheme@gmail.com</li>
+            <li class="hover:text-azul-700">bellatheme@gmail.com</li>
             <img src="icones/divisor-footer.svg" alt="">
-            <li><a href="https://www.instagram.com/macramedabella/" target="_blank">@macramedabella</a></li>
+            <li class="hover:text-azul-700"><a href="https://www.instagram.com/macramedabella/" target="_blank">@macramedabella</a></li>
 
         </ul>
      </footer>

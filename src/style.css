@@ -4,25 +4,37 @@
 
 @layer components {
     .div-img {
-        @apply ml-8 mt-20  rounded-md flex gap-10;
+        @apply ml-32 mt-40 flex gap-10 items-center;
     }
 }
 
 @layer components {
     .div-img img {
-        @apply p-4 border-solid border-areia-500 border-2 rounded-md w-1/3;
+        @apply rounded-md w-1/4 shadow-lg ;
     }
 }
 
 @layer components {
     .div-img p {
-        @apply p-4 text-xl text-mostarda-400 w-2/3;
+        @apply pl-8 border-solid border-l-4 border-mostarda-500 text-mostarda-600 w-1/2 text-4xl roboto leading-normal items-center flex;
     }
 }
 
 @layer components {
     .button {
-        @apply bg-areia-500 self-center p-4 mx-10 border-solid border-areia-500 border-2 rounded-md text-2xl shadow;
+        @apply bg-mostarda-300 self-center p-4 mx-10 rounded-full text-2xl shadow-md roboto text-mostarda-700 font-bold;
+    }
+}
+
+@layer components {
+    .background-img {
+        @apply opacity-70 w-1/5;
+    }
+}
+
+@layer components {
+    .active {
+        @apply shadow-2xl w-1/4;
     }
 }
 
@@ -36,3 +48,4 @@
 .roboto-serif{
     font-family: 'Roboto Serif', serif;
 }
+

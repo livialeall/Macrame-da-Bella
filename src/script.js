@@ -90,11 +90,12 @@ const imgHover = new ImagemHover()
 
 const divCarrossel = document.querySelector('#carousel')
 const imagens = divCarrossel.querySelectorAll('img')
-let currentIndex = 0
 
 class Carrossel {
     constructor(){
         this.eventos()
+        
+
     }
     eventos(){
         divCarrossel.addEventListener('click',e=>{
@@ -106,7 +107,8 @@ class Carrossel {
             }
 
             if(id === 'next') {
-                this.handleClickNext()
+                this.handleClickNext(),10000
+                
                 
             }
         })
@@ -114,23 +116,51 @@ class Carrossel {
 
 
     handleClickNext(){
-        imagens[currentIndex].classList.remove('block')
-        imagens[currentIndex].classList.add('hidden')
-        currentIndex = (currentIndex + 1) % imagens.length /* se eu chego no ultimo, a conta retorna zero e eu volto para a primeira foto */
-        imagens[currentIndex].classList.remove('hidden')
-    }
+        const active = divCarrossel.querySelector('.active')
+        const imgPosterior = active.nextElementSibling
+        const imgPosterior2 = imgPosterior.nextElementSibling
+        const imgAnterior = active.previousElementSibling
+
+        if(!imgPosterior){
+            return
+        }
+        active.classList.remove('active')
+        active.classList.add('background-img')
+
+        imgPosterior.classList.remove('background-img')
+        imgPosterior.classList.add('active')
+
+        imgPosterior2.classList.add('background-img')
+        imgPosterior2.classList.remove('hidden')
+
+        imgAnterior.classList.remove('background-img')
+        imgAnterior.classList.add('hidden')
+
+        }
 
     handleClickPrevious(){
-        
-        imagens[currentIndex].classList.remove('block')
-        imagens[currentIndex].classList.add('hidden')
-        if(currentIndex == 0) {
-            currentIndex = imagens.length -1
-        }else{
-            currentIndex = (currentIndex - 1)
+        const active = divCarrossel.querySelector('.active')
+        const imgAnterior = active.previousElementSibling
+        const imgAnterior2 = imgAnterior.previousElementSibling
+        const imgPosterior = active.nextElementSibling
+        if(!imgAnterior){
+            return
         }
-        console.log(currentIndex)
-        imagens[currentIndex].classList.remove('hidden')
+        active.classList.remove('active')
+        active.classList.add('background-img')
+
+        imgAnterior.classList.remove('background-img')
+        imgAnterior.classList.add('active')
+
+        imgPosterior.classList.remove('background-img')
+        imgPosterior.classList.add('hidden')
+
+        imgAnterior2.classList.add('background-img')
+        imgAnterior2.classList.remove('hidden')
+        
+           
+        
+
     }
 }
 

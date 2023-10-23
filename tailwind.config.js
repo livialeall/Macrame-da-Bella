@@ -26,12 +26,9 @@ module.exports = {
       },
     },
 
-    fontFamily:{
-      'sans':['Roboto']
-    }
-
-    
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-animatecss')
+  ],
 }
 
