@@ -6,62 +6,71 @@
     <link rel="stylesheet" href="../dist/style.css">
     <title>Macramê da Bella</title>
 </head>
-<body class="bg-areia-100">
-     <section class="border-solid border-areia-500 border-2 rounded-md m-8 relative py-4 ">
-         <nav>
-            <ul class="flex justify-center items-center mb-8 ml-8 gap-10">
+<body class="bg-areia-200">
+    
+     <section class="apresentacao mb-96">
+         <nav class="bg-areia-100 py-8">
+            <ul class="flex justify-center items-center gap-10 text-mostarda-400 text-2xl roboto">
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><div class="bg-mostarda-transparent rounded-full p-2 border-solid border-2 border-mostarda-300 font-titulo text-mostarda-400">MB</div></li>
                 <li><a href="#contato">Contato</a></li>
-                <li><a href="https://www.instagram.com/macramedabella/" target="_blank">Instagram</a></li>
+                <li class="font-bold"><a href="https://www.instagram.com/macramedabella/" target="_blank">Instagram</a></li>
             </ul>
          </nav>
          
-             <div class="text-center relative py-28">
-                 <h2 class="italic text-areia-600">Amor em <span class="font-semibold">nós</span></h2>
-                 <h1 class="text-azul-500 text-6xl font-titulo">Macramê</h1>
-                <!--  <img class="absolute right-1/3 bottom-2/3" src="icones/traco.svg" alt=""> -->
-                 <p class="text-areia-600 text-4xl inline">
-                da 
-                </p>
-                <!-- <img class="absolute left-1/3 bottom-2/3" src="icones/traco.svg" alt="">  -->
-         
-                 <h1 class="text-mostarda-400 font-destaque text-6xl">Bella</h1>
+         <div class="flex">
+
+             <div class="text-right w-1/2 text-9xl text-mostarda-300 mt-48 pr-8 border-r-solid border-r-4 border-r-mostarda-600 roboto-serif ">
+                    <h1 class="tracking-wider">Macramê</h1>
+                    <h1 class="my-2 text-mostarda-500">da</h1>
+                    <h1 class="text-mostarda-700 ">Bella</h1>
+                    <span  class="text-4xl italic text-areia-600 roboto" >Amor em <span class="font-bold">nós</span></span>
              </div>
+
+             <div class="w-1/2 relative">
+                <img class="w-4/6 z-10 absolute left-16 top" src="planta-inicio.png" alt="">
+                <img class="absolute right-2 z-0 top-0 w-8/12" src="icones/Rectangle 32.svg" alt="">
+             </div>
+         </div>
+
 
      </section>
     
 
      <section id="galeria">
-        <img class="w-full" src="capa-galeria.jpg" alt="painel-galeria">
-        <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
-        <h1 class="text-6xl text-mostarda-400 font-titulo text-center">Galeria</h1>
-        <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
+        <h1 class="text-6xl text-mostarda-400 font-titulo text-center mb-20">Galeria</h1>
         <ul class="flex gap-8 mx-8 lista-imgs">
             <li>
-                <img class="rounded-full" id="bolsa" src="img-categoria/bolsa.jpg" alt="bolsa">
+                <img class="rounded-full original" id="bolsa" src="img-categoria/bolsa.jpg" alt="bolsa">
                 <img class="rounded-full hidden bolsa" id="hover" src="img-hover/bolsa-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full" id="paineis" src="img-categoria/paineis.jpg" alt="paineis">
+                <img class="rounded-full original" id="paineis" src="img-categoria/paineis.jpg" alt="paineis">
                 <img class="rounded-full hidden paineis" id="hover" src="img-hover/paineis-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full" id="utensilios" src="img-categoria/utensilios.jpg" alt="utensilios">
+                <img class="rounded-full original" id="utensilios" src="img-categoria/utensilios.jpg" alt="utensilios">
                 <img class="rounded-full hidden utensilios" id="hover" src="img-hover/utensilios-hover.jpg" alt="">
             </li>
             <li>
-                <img class="rounded-full" id="planta" src="img-categoria/planta.jpg" alt="planta">
+                <img class="rounded-full original" id="planta" src="img-categoria/planta.jpg" alt="planta">
                 <img class="rounded-full hidden planta" id="hover" src="img-hover/planta-hover.jpg" alt=""></li>
         </ul>
         
+        <div id="carousel" class="my-40 flex justify-center">
+            <button class="button " id="previous"> Anterior </button>
+            <img class="block rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (1).jpeg" alt="">
+            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.02 (2).jpeg" alt="">
+            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.04 (1).jpeg" alt="">
+            <img class="hidden rounded-md" src="img/WhatsApp Image 2023-10-15 at 12.43.05.jpeg" alt="">
+            <button class="button " id="next"> Próxima </button>
+        </div>
         <!-- carrosel -->
      </section>
 
      <section id="sobre">
         <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
-        <h1  class="text-6xl text-mostarda-400 font-titulo text-center" >Sobre</h1>
+        <h1  class="text-6xl text-mostarda-400 font-titulo text-center mt-20" >Sobre</h1>
         <!-- <img src="icones/traco-divisoria.svg" alt=""> -->
         <h2 class="text-center my-4 italic text-blue-500 text-xl ">“Amor e cuidado em cada <span class="font-semibold">nó</span>”</h2>
         <p class="mx-32 max-w-1200 text-center text-lg text-areia-600 pb-8 leading-relaxed" >O Macrame da Bella é uma loja artesanal criativa, onde você encontrará uma ampla variedade de peças de macramê feitas a mão, com design único e estilo autêntico. Eu me especializei em criar peças de macramê para decoração de interiores e exteriores, como pendentes, painéis, espelhos, cortinas, mesa posta, vestuário e acessórios. </p>
@@ -79,6 +88,8 @@
 
         </ul>
      </footer>
+
+     
 
      <script src="script.js"></script>
      
